@@ -1,0 +1,9 @@
+services:
+  storybook:
+    image: storybook
+    volumes:
+      - .:/var/www
+    working_dir: /var/www
+    ports:
+      - "6006:6006"
+      - "8000:8000"

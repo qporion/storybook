@@ -1,0 +1,37 @@
+import { Meta, Story, Preview, Canvas, ArgsTable, Controls } from '@storybook/addon-docs';
+import * as Stories from './index.stories';
+
+<Meta of={Stories}/>
+
+# ButtonGroup
+<Canvas of={Stories.Default}/>
+<Controls of={Stories.Default}/>
+
+Le composant `ButtonGroup` est un bloc qui accueille une série de `Buttton`.
+
+**Voici la liste des variables pour ce composant :**
+```php
+class Component
+{
+    public bool $compact = false;
+}
+
+// De plus, tous les attributs HTML peuvent être déclarés comme `class`, `id`, `data`, etc.
+```
+
+## Utilisation
+### Syntaxe HTML
+```php
+<twig:fcb-button-group>
+    <twig:fcb-button icon="edit" label="Modifier" />
+    <twig:fcb-button icon="save" label="Enregistrer" />
+    <twig:fcb-button icon="trash_delete" label="Supprimer" />
+</twig:fcb-button-group>
+```
+
+## Déclinaisons
+
+<Canvas>
+    <Story of={Stories.WithChildren}/>
+    <Story of={Stories.Default}/>
+</Canvas>

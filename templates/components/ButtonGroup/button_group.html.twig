@@ -1,0 +1,19 @@
+{#
+Variables du composant
+----------------------
+#}
+{% set component_class = "fcb-button_group" %}
+{% set attributes = attributes.defaults({ class: component_class ~ '--spacing-' ~ (compact ? 'compact' : 'default') }) %}
+{% set attributes = attributes.defaults({ class: component_class }) %}
+
+
+{#
+Composant
+---------
+#}
+<div {{ attributes }}>
+
+    {% block content %}
+    {% endblock content %}
+
+</div>

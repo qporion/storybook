@@ -1,0 +1,23 @@
+{
+    "devDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "@sensiolabs/storybook-symfony-webpack5": "file:vendor/sensiolabs/storybook-bundle/storybook",
+        "@storybook/addon-a11y": "^8.1.11",
+        "@storybook/addon-essentials": "8.1.11",
+        "@storybook/addon-interactions": "8.1.11",
+        "@storybook/addon-links": "8.1.11",
+        "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+        "@storybook/blocks": "8.1.11",
+        "@storybook/cli": "8.1.11",
+        "@storybook/test": "8.1.11",
+        "@symfony/stimulus-bridge": "^3.2.0",
+        "@symfony/stimulus-bundle": "file:vendor/symfony/stimulus-bundle/assets",
+        "storybook": "8.1.11",
+        "typescript": "^5.4.2",
+        "webpack": "^5.90.3"
+    },
+    "scripts": {
+        "storybook": "sb dev -p 6006 --no-open --disable-telemetry",
+        "build-storybook": "sb build"
+    }
+}
